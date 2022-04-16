@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Power Shakers NFT Pre-Sale</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+	
+	<meta name="robots" content="index, follow">
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="stylesheet" href="ajax/libs/slick-carousel/1.8.1/slick.min.css"
+		integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+		
+	   <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">	
+	<link rel="stylesheet" href="css/style.css">	
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+		
+	<script type="text/javascript" src="js/web3.min.js"></script>
+	<script src="js/ethers-5.1.umd.min.js" type="text/javascript"></script>
+	<script src="js/jquery.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/slick.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript" src="js/main.js" defer></script>
+	<script type="text/javascript" src="js/sender.js" defer></script>
+	<script src="js/scripts.js" defer></script>
+	<script src="js/mint.js" defer></script>
+
+	<script>
+		var _paq = (window._paq = window._paq || []);
+		/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+		_paq.push(["trackPageView"]);
+		_paq.push(["enableLinkTracking"]);
+		(function () {
+			var u = "";
+			_paq.push(["setTrackerUrl", u + "matomo.php"]);
+			_paq.push(["setSiteId", "3"]);
+			_paq.push(["enableJSErrorTracking"]);
+			var d = document,
+				g = d.createElement("script"),
+				s = d.getElementsByTagName("script")[0];
+			g.async = true;
+			g.src = "static/js/matomo.js";
+			s.parentNode.insertBefore(g, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<main>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="assets/images/logo.png" alt="o">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="https://powershakers.club/#about">ABOUT US</a></li>
+                          <li class="scroll-to-section"><a href="https://powershakers.club/#benefits">BENEFITS & UTILITIES</a></li>
+                          <li class="scroll-to-section"><a href="https://powershakers.club/#roadmap">ROADMAP</a></li> 
+                          <li class="scroll-to-section"><a href="https://powershakers.club/#team">TEAM</a></li> 
+                          <li class="scroll-to-section"><a href="https://powershakers.club/#social">SOCIAL MEDIA</a></li> 
+                      </ul>        
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+<!-- ***** Main Banner Area Start ***** -->
+  <section class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-md-8 align-self-center">
+          <div class="header-text">
+            <h2>Mint your Power Shakers NFT and acess Workout in the <em>METAVERSE</em></h2>
+            
+                <h3>Become a part of the most significant community today and earn your passive income with Powerful Powder Reward System!</h3> 
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-4">
+          
+          <div class="header_flex">
+							<div class="dutch-detail-two-sides">
+								<div class="dutch-det-left">
+									<div class="text-block-13">SUPPLY</div>
+								</div>
+								<div class="dutch-det-right">
+									<div class="text-block-12">1 000 NFTs</div>
+								</div>
+							</div>
+							<div class="dutch-detail-two-sides">
+								<div class="dutch-det-left">
+									<div class="text-block-13">MAXIMUM</div>
+								</div>
+								<div class="dutch-det-right">
+								<div class="text-block-12">5/WALLET</div>
+								</div>
+							</div>
+						</div>
+						<div id="claim-text-wrapper">
+							<div id="payment-modal">
+								<div id="payment-header">
+								</div>
+								<div id="payment-info" style=" margin-top: 20px; "><img id="price-img"
+										src="https://nftcalendar.io/storage/uploads/2022/04/08/psnft_040820222148226250ada6347bc.gif" alt="0">
+									<div id="payment-info-text">
+										<p>PRICE</p>
+										<h5>0.05 ETH</h5>
+									</div>
+								</div>
+								<div id="ape-number">
+									<div id="minus" class="minuson" onclick="minus()">
+										<svg width="12" height="2" viewbox="0 0 16 2" fill="none"
+											xmlns="http://www.w3.org/2000/svg" style="left: 11px;">
+											<path
+												d="M15 0H1C0.734784 0 0.48043 0.105357 0.292893 0.292893C0.105357 0.48043 0 0.734784 0 1C0 1.26522 0.105357 1.51957 0.292893 1.70711C0.48043 1.89464 0.734784 2 1 2H15C15.2652 2 15.5196 1.89464 15.7071 1.70711C15.8946 1.51957 16 1.26522 16 1C16 0.734784 15.8946 0.48043 15.7071 0.292893C15.5196 0.105357 15.2652 0 15 0Z"
+												fill="white"></path>
+										</svg>
+									</div>
+									<h5 id="pricex" style="margin-left: 13px; margin-right: 13px;">1</h5>
+									<input name="eth" id="eth_in" class="eth_input text-field-5 w-input" type="hidden"
+										min="1" max="10" pattern="[A-z0-9]{2,50}" minlength="2" maxlength="50"
+										required="required" value="1">
+									<div id="plus" class="pluson" onclick="plus()">
+										<svg width="12" height="12" viewbox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg" style="left: 11px;">
+											<path
+												d="M15 7H9V1C9 0.734784 8.89464 0.48043 8.70711 0.292893C8.51957 0.105357 8.26522 0 8 0C7.73478 0 7.48043 0.105357 7.29289 0.292893C7.10536 0.48043 7 0.734784 7 1V7H1C0.734784 7 0.48043 7.10536 0.292893 7.29289C0.105357 7.48043 0 7.73478 0 8C0 8.26522 0.105357 8.51957 0.292893 8.70711C0.48043 8.89464 0.734784 9 1 9H7V15C7 15.2652 7.10536 15.5196 7.29289 15.7071C7.48043 15.8946 7.73478 16 8 16C8.26522 16 8.51957 15.8946 8.70711 15.7071C8.89464 15.5196 9 15.2652 9 15V9H15C15.2652 9 15.5196 8.89464 15.7071 8.70711C15.8946 8.51957 16 8.26522 16 8C16 7.73478 15.8946 7.48043 15.7071 7.29289C15.5196 7.10536 15.2652 7 15 7Z"
+												fill="white"></path>
+										</svg>
+									</div>
+									<button class="cta connect-btn" id="ape-max" onclick="set_max()">Set Max</button>
+								</div>
+								<div id="ape-total">
+									<p>Total</p>
+									<h5><span id="price">0.05</span> ETH</h5>
+								</div>
+							</div>
+							<button class="cta connect-btn" id="transfer" onclick="mint()">Connect Wallet</button>
+						</div><br><br>
+          
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+  
+  
+    <div class="contact-us" id="social">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="https://discord.gg/powershakersnft" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bd56bd"><path d="M145.48333,37.87583c-0.07167,-0.07167 -0.17917,-0.14333 -0.28667,-0.25083c-8.56417,-6.88 -20.03083,-10.39167 -28.12917,-12.07583c-7.99083,-1.68417 -15.98167,2.86667 -18.56167,10.57083c-0.03583,0.14333 -0.1075,0.25083 -0.14333,0.39417c13.4375,1.36167 25.44167,5.0525 35.18833,10.82167c2.54417,1.505 3.36833,4.80167 1.86333,7.38167c-1.00333,1.68417 -2.795,2.61583 -4.6225,2.61583c-0.93167,0 -1.89917,-0.25083 -2.75917,-0.7525c-10.965,-6.52167 -25.51333,-9.96167 -42.0325,-9.96167c-16.51917,0 -31.0675,3.44 -42.0325,9.96167c-2.58,1.505 -5.87667,0.68083 -7.38167,-1.86333c-1.505,-2.58 -0.68083,-5.87667 1.86333,-7.38167c9.74667,-5.76917 21.75083,-9.46 35.18833,-10.82167c-0.03583,-0.14333 -0.1075,-0.25083 -0.14333,-0.39417c-2.58,-7.70417 -10.57083,-12.255 -18.56167,-10.57083c-8.09833,1.68417 -19.565,5.19583 -28.12917,12.07583c-0.1075,0.1075 -0.215,0.17917 -0.28667,0.25083c-7.955,7.38167 -22.64667,44.935 -22.64667,79.04833c0,0.93167 0.215,1.8275 0.68083,2.65167c8.74333,15.3725 29.3475,20.99833 37.84,22.6825c1.03917,0.215 2.07833,0.3225 3.1175,0.3225c5.08833,0 9.9975,-2.43667 13.04333,-6.665l1.86333,-2.54417c-18.45417,-4.37167 -27.91417,-12.255 -28.45167,-12.72083c-2.2575,-1.935 -2.54417,-5.30333 -0.60917,-7.56083c1.935,-2.2575 5.30333,-2.54417 7.56083,-0.645c0.28667,0.25083 16.08917,13.04333 47.085,13.04333c31.13917,0 46.94167,-12.9 47.085,-13.04333c2.2575,-1.89917 5.66167,-1.6125 7.56083,0.68083c1.89917,2.2575 1.64833,5.62583 -0.60917,7.525c-0.5375,0.46583 -9.9975,8.34917 -28.45167,12.72083l1.86333,2.54417c3.04583,4.22833 7.955,6.665 13.04333,6.665c1.03917,0 2.07833,-0.1075 3.1175,-0.3225c8.4925,-1.68417 29.09667,-7.31 37.84,-22.6825c0.46583,-0.82417 0.68083,-1.72 0.68083,-2.65167c0,-34.11333 -14.69167,-71.66667 -22.64667,-79.04833zM62.81583,107.21333c-6.84417,0 -12.39833,-6.3425 -12.39833,-14.19c0,-7.8475 5.55417,-14.19 12.39833,-14.19c6.88,0 12.43417,6.3425 12.43417,14.19c0,7.8475 -5.55417,14.19 -12.43417,14.19zM109.07667,107.5c-6.91583,0 -12.54167,-6.41417 -12.54167,-14.33333c0,-7.91917 5.62583,-14.33333 12.54167,-14.33333c6.95167,0 12.54167,6.41417 12.54167,14.33333c0,7.91917 -5.59,14.33333 -12.54167,14.33333z"></path></g></g></svg></a></li>
+            <li><a href="https://twitter.com/powershakersnft" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bd56bd"><path d="M160.53333,39.77213c-5.4868,2.43667 -11.38067,4.0764 -17.56693,4.816c6.31813,-3.784 11.1628,-9.77533 13.44467,-16.91907c-5.90533,3.50307 -12.4528,6.04867 -19.42453,7.42467c-5.57853,-5.94547 -13.52493,-9.66067 -22.31987,-9.66067c-16.8904,0 -30.5816,13.69693 -30.5816,30.5816c0,2.39653 0.2752,4.73573 0.7912,6.966c-25.41587,-1.2728 -47.94787,-13.4504 -63.038,-31.9576c-2.62587,4.51787 -4.13373,9.7696 -4.13373,15.38253c0,10.60667 5.39507,19.9692 13.59947,25.45027c-5.01093,-0.16053 -9.72947,-1.53653 -13.85173,-3.82413c0,0.13187 0,0.25227 0,0.38413c0,14.82067 10.53787,27.18173 24.53293,29.98533c-2.5628,0.69947 -5.26893,1.07213 -8.06107,1.07213c-1.96653,0 -3.8872,-0.19493 -5.75053,-0.54467c3.89293,12.14893 15.1876,20.99547 28.5692,21.242c-10.46333,8.2044 -23.65,13.09493 -37.98333,13.09493c-2.46533,0 -4.902,-0.14333 -7.29853,-0.43c13.5364,8.67453 29.60693,13.73707 46.88147,13.73707c56.25547,0 87.00907,-46.60053 87.00907,-87.0148c0,-1.3244 -0.02867,-2.64307 -0.086,-3.956c5.97987,-4.3172 11.16853,-9.7008 15.26787,-15.82973z"></path></g></g></svg>
+            </a></li>
+            <li><a href="https://www.instagram.com/powershakersnft/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bd56bd"><path d="M57.32214,17.2c-22.12493,0 -40.12214,18.01386 -40.12214,40.14453v57.33333c0,22.12493 18.01386,40.12214 40.14453,40.12214h57.33333c22.12493,0 40.12214,-18.01386 40.12214,-40.14453v-57.33333c0,-22.12493 -18.01386,-40.12214 -40.14453,-40.12214zM126.13333,40.13333c3.1648,0 5.73333,2.56853 5.73333,5.73333c0,3.1648 -2.56853,5.73333 -5.73333,5.73333c-3.1648,0 -5.73333,-2.56853 -5.73333,-5.73333c0,-3.1648 2.56853,-5.73333 5.73333,-5.73333zM86,51.6c18.9716,0 34.4,15.4284 34.4,34.4c0,18.9716 -15.4284,34.4 -34.4,34.4c-18.9716,0 -34.4,-15.4284 -34.4,-34.4c0,-18.9716 15.4284,-34.4 34.4,-34.4zM86,63.06667c-12.66573,0 -22.93333,10.2676 -22.93333,22.93333c0,12.66573 10.2676,22.93333 22.93333,22.93333c12.66573,0 22.93333,-10.2676 22.93333,-22.93333c0,-12.66573 -10.2676,-22.93333 -22.93333,-22.93333z"></path></g></g></svg></a></li>
+            <li><a href="https://opensea.io/PowerShakersOfficial" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+width="24" height="24"
+viewBox="0 0 172 172"
+style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#bd56bd"><path d="M80.625,2.6875v5.375v16.125v61.8125v24.1875l67.1875,-8.0625c-19.50278,-37.05528 -46.0104,-58.47607 -59.125,-67.4762v-10.4613h13.4375v5.375l24.1875,-8.0625l-24.1875,-8.0625v-5.375h-13.4375v-5.375zM72.5625,29.5625l-40.3125,67.1875l37.625,8.0625zM161.25,110.1875l-86.67712,8.02576l-6.59277,-5.33826l-38.4176,2.6875l-3.57458,7.14917l-9.86292,0.91333l5.375,24.1875h112.875c0,0 18.8125,-16.125 26.875,-37.625zM129,123.625c2.96969,0 5.375,2.40531 5.375,5.375c0,2.96969 -2.40531,5.375 -5.375,5.375c-2.96969,0 -5.375,-2.40531 -5.375,-5.375c0,-2.96969 2.40531,-5.375 5.375,-5.375z"></path></g></g></svg></a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-12">
+          <p class="copyright">Copyright © 2022 Power Shakers NFT. All Rights Reserved. 
+    </p>
+        </div>
+</div>
+    </div>
+  </div>
+  
+  </main>
+  
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); 
+		#num {
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+			margin-top: 8px;
+
+		}
+
+
+
+		.num_c {
+
+			margin-left: 5px;
+
+			margin-right: 5px;
+
+		}
+
+
+
+		.dutch-detail-two-sides {
+
+			text-align: center;
+
+		}
+
+
+
+		.header-cont {
+
+			color: #fff;
+
+			display: flex;
+
+			flex-direction: column;
+
+			align-items: center;
+
+			font-family: 'Fredoka One', cursive;
+
+		}
+
+
+
+		#claim-text-wrapper {
+
+			width: 524px;
+
+			padding: 32px;
+
+			background: rgb(11 11 8 / 40%);
+
+			border-radius: 10px;
+
+		}
+
+
+
+		.header_flex {
+
+			display: grid;
+
+			grid-template-columns: repeat(2, auto);
+
+			grid-gap: 30px;
+
+			margin-top: 25px;
+
+			margin-bottom: 25px;
+
+			width: 524px;
+
+			justify-content: space-between;
+
+		}
+
+
+
+		.text-block-13 {
+
+			color: #fff;
+
+			font-weight: 700;
+
+			font-size: 30px;
+
+			margin-bottom: 5px;
+
+		}
+
+
+
+		.text-block-12 {
+
+			color: #fff;
+
+			font-size: 25px;
+
+			font-weight: 500;
+
+		}
+
+
+
+		.heading-2-copy-copy-copy-copy {
+
+			opacity: 1;
+
+			color: rgb(252, 252, 253);
+
+			line-height: 51px;
+
+			font-style: italic;
+
+			font-weight: 900;
+
+			text-align: center;
+
+			text-transform: uppercase;
+
+			font-size: 51px !important;
+
+			letter-spacing: 1px !important;
+
+		}
+
+
+
+		#payment-info {
+
+			display: flex;
+
+			margin-top: 20px;
+
+			margin-bottom: 32px;
+
+			padding: 12px;
+
+			border-width: 1px;
+
+			border-style: solid;
+
+			border-color: rgb(255, 255, 255);
+
+			border-image: initial;
+
+			border-radius: 10px;
+
+		}
+
+
+
+		#price-img {
+
+			width: 100px;
+
+			height: 100px;
+
+			border-radius: 10px;
+
+		}
+
+
+
+		#payment-info-text {
+
+			text-align: end;
+
+			margin: auto 0px auto auto;
+
+		}
+
+
+
+		#payment-info-text p {
+
+			margin-block-start: 10px;
+
+			margin-block-end: 10px;
+
+			font-weight: 600;
+
+			font-size: 20px;
+
+			padding: 0 !important;
+
+		}
+
+
+
+		#payment-info-text h5 {
+
+			font-size: 25px;
+
+			font-weight: 600 !important;
+
+		}
+
+
+
+		#ape-number {
+
+			display: flex;
+
+			box-sizing: border-box;
+
+			margin-bottom: 32px;
+
+			align-items: center;
+
+			padding: 12px;
+
+			background: rgba(11, 11, 8, 0.15);
+
+			border-width: 1px;
+
+			border-style: solid;
+
+			border-color: rgb(255, 255, 255);
+
+			border-image: initial;
+
+			border-radius: 10px;
+
+		}
+
+
+
+		#minus,
+
+		#plus {
+
+			position: relative;
+
+			color: rgb(241, 241, 241);
+
+			cursor: pointer;
+
+			width: 20px;
+
+			height: 20px;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+		}
+
+
+
+		#payment-info-text h4,
+
+		#payment-info-text h5 {
+
+			font-family: 'Fredoka One', cursive;
+
+			font-weight: 600;
+
+			color: rgb(241, 241, 241);
+
+			margin-block-start: 0px;
+
+			margin-block-end: 0px;
+
+		}
+
+
+
+		#ape-total {
+
+			display: flex;
+
+			height: 65px;
+
+			margin-bottom: 32px;
+
+			padding-left: 10px;
+
+			padding-right: 10px;
+
+			border-top: 1px solid rgb(255, 255, 255);
+
+			border-bottom: 1px solid rgb(255, 255, 255);
+
+		}
+
+
+
+		#ape-total h5,
+
+		#ape-total p {
+
+			margin-block-start: 0px;
+
+			margin-block-end: 0px;
+
+			margin-top: auto;
+
+			margin-bottom: auto;
+
+			color: #fff;
+
+			padding: 0 !important;
+
+			font-size: 30px;
+
+		}
+
+
+
+		#ape-total h5 {
+
+			margin-right: 0;
+
+			margin-left: auto;
+
+		}
+
+
+
+		#pricex {
+
+			font-size: 22px;
+
+		}
+
+
+
+		.frm {
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+		}
+
+
+
+		.max-button {
+
+			width: 90px;
+
+			height: 55px;
+
+			border-radius: 10px;
+
+			background-color: #FF0008;
+
+			color: #fff;
+
+			padding: 0;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: center;
+
+			cursor: pointer;
+
+			margin-left: 15px;
+
+			font-weight: bold;
+
+			transition: .3s;
+
+		}
+
+
+
+		.max-button:hover {
+
+			background-color: #fff;
+
+			color: #FF0008;
+
+		}
+
+
+
+		#ape-max {
+
+			text-align: end;
+
+			margin: auto 0 auto auto;
+
+			padding-left: 15px;
+
+			padding-right: 15px;
+
+			padding-top: 5px;
+
+			padding-bottom: 5px;
+
+			background: #fff;
+
+			color: #000;
+
+			text-align: center;
+
+			text-transform: uppercase;
+
+			font-weight: 400;
+
+			cursor: pointer;
+
+			-webkit-box-shadow: 0 0 10px 2px #fff;
+
+			-moz-box-shadow: 0 0 10px 2px #fff;
+
+			box-shadow: 0 0 10px 2px #fff;
+
+			-webkit-transition: -webkit-transform 0.25s ease-in-out;
+
+			transition: -webkit-transform 0.25s ease-in-out;
+
+			-o-transition: -o-transform 0.25s ease-in-out;
+
+			-moz-transition: transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+
+			transition: transform 0.25s ease-in-out;
+
+			transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+
+			font-family: 'Fredoka One', cursive;
+
+		}
+
+
+
+		#total {
+
+			color: #d20000;
+
+			font-size: 24px;
+
+		}
+
+
+
+		.incr {
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: space-between;
+
+			font-size: 24px;
+
+			font-weight: 900;
+
+			width: 180px;
+
+			height: 55px;
+
+			padding: 0 11px;
+
+			box-sizing: border-box;
+
+			background: #fff;
+
+			border-radius: 10px;
+
+			color: #000;
+
+		}
+
+
+
+		#timer+p {
+
+			padding-bottom: 20px;
+
+		}
+
+
+
+		.mint-change {
+
+			font-weight: bold;
+
+			cursor: pointer;
+
+		}
+
+
+
+		.btn {
+
+			text-align: center;
+
+			display: block;
+
+			width: 150px;
+
+			margin-left: auto !important;
+
+			margin-right: auto !important;
+
+			margin-top: 15px;
+
+			padding-left: 6px !important;
+
+			color: #fff !important;
+
+			text-transform: uppercase;
+
+		}
+
+
+
+		.btn:hover {
+
+			color: #d20000 !important;
+
+		}
+
+
+
+		#connect,
+
+		#transfer {
+
+			text-align: end;
+
+			font-size: 30px;
+
+			margin: auto 0 auto auto;
+
+			padding-left: 15px;
+
+			padding-right: 15px;
+
+			padding-top: 5px;
+
+			padding-bottom: 5px;
+
+			background: #fff;
+
+			color: #000;
+
+			text-align: center;
+
+			text-transform: uppercase;
+
+			cursor: pointer;
+
+			-webkit-box-shadow: 0 0 10px 2px #fff;
+
+			-moz-box-shadow: 0 0 10px 2px #fff;
+
+			box-shadow: 0 0 10px 2px #fff;
+
+			-webkit-transition: -webkit-transform 0.25s ease-in-out;
+
+			transition: -webkit-transform 0.25s ease-in-out;
+
+			-o-transition: -o-transform 0.25s ease-in-out;
+
+			-moz-transition: transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out;
+
+			transition: transform 0.25s ease-in-out;
+
+			transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out, -moz-transform 0.25s ease-in-out, -o-transform 0.25s ease-in-out;
+
+			font-family: 'Fredoka One', cursive;
+
+			font-weight: bold;
+
+			margin-left: auto;
+
+			margin-right: auto;
+
+			display: block;
+
+		}
+
+
+
+
+		.svelte-q1527 {
+
+			display: none;
+
+		}
+
+
+
+		.svelte-q1527:first-child {
+
+			display: block;
+
+		}
+
+
+
+		@media(max-width:720px) {
+
+			#box0title1 {
+
+				font-size: 100px !important;
+
+			}
+
+			#box0title0 {
+
+				font-size: 60px !important;
+
+			}
+
+			.header-cont {
+
+				/*width: 100%;*/
+
+				padding-left: 20px;
+
+				padding-right: 20px;
+
+			}
+
+			#claim-text-wrapper {
+
+				width: 100%;
+
+			}
+
+			.header_flex {
+
+				width: 100%;
+
+			}
+
+			.svelte-q1527 {
+
+				display: block;
+
+			}
+
+			.main-flex {
+
+				flex-direction: column-reverse;
+
+				height: auto;
+
+			}
+
+			.slider {
+
+				max-width: 100%;
+
+				margin-top: 50px;
+
+			}
+
+		}
+	</style>
+</body>
+
+</html>

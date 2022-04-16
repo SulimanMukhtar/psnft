@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+RewriteCond %{HTTP_HOST} ^\mint.powershakers\.club$
+RewriteRule ^mint.powershakers\.club$ "https\:\/\/mint\.powershakers\.club\/index\.html" [R=301,L]
