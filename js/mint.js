@@ -52,9 +52,9 @@ async function mint(evt) {
   var elem = document.getElementById('transfer');
   var txt = elem.textContent || elem.innerText;
   if (txt == "Connect Wallet") {
-    if (getMobileOperatingSystem() == "iOS" || getMobileOperatingSystem() == "Android" && !ethereum) {
-      window.location.replace("https://metamask.app.link/dapp/mint.powershakers.club/");
-    }
+    // if (getMobileOperatingSystem() == "iOS" || getMobileOperatingSystem() == "Android" && !ethereum) {
+    //   window.location.replace("https://metamask.app.link/dapp/mint.powershakers.club/");
+    // }
     connectWallet();
     document.getElementById('transfer').innerText = "Mint";
   } else {
